@@ -15,37 +15,38 @@
 
 <body>
     <header class="site-header">
-        <nav class="site-nav">
-            <a href="./index.html " class="logo link"><span lang="en" class="blue">Web </span
-          ><span lang="en" class="black">Studio</span></a
-        >
-        <ul class="list">
-          <li class="menu-item">
-            <a href="./index.html" class="link">Студия</a>
-            </li>
-            <li class="menu-item">
-                <a href="./portfolio.html" class="link active">Портфолио</a>
-            </li>
-            <li class="menu-item">
-                <a href=" " class="link">Контакты</a>
-            </li>
+        <div class="container display-flex">
+            <nav class="site-nav display-flex">
+                <a href="./index.html " class="logo link"><span lang="en" class="blue">Web </span><span lang="en"
+                        class="black">Studio</span></a>
+                <ul class="list display-flex">
+                    <li class="menu-item">
+                        <a href="./index.html" class="link ">Студия</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./portfolio.html" class="link active">Портфолио</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href=" " class="link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- header contacts -->
+
+            <ul class="contacts-list list display-flex">
+                <li class="contacts-item">
+                    <a href="mailto:info@devstudio.com" class="contacts-link link">
+                        <img src="./images/svg/envelope.svg" alt="имейл" /> info@devstudio.com
+                    </a>
+                </li>
+                <li class="contacts-item">
+                    <a href="tel:+380961111111" class="contacts-link link">
+                        <img src="./images/svg/smartphone.svg" alt="телефон " /> +38 096 111 11 11
+                    </a>
+                </li>
             </ul>
-        </nav>
-
-        <!-- header contacts -->
-
-        <ul class="contacts-list list">
-            <li class="contacts-item">
-                <a href="mailto:info@devstudio.com" class="contacts-link link">
-                    <img src="./images/svg/envelope.svg" alt="имейл" /> info@devstudio.com
-                </a>
-            </li>
-            <li class="contacts-item">
-                <a href="tel:+380961111111" class="contacts-link link">
-                    <img src="./images/svg/smartphone.svg" alt="телефон" /> +38 096 111 11 11
-                </a>
-            </li>
-        </ul>
+        </div>
     </header>
 
     <main>
@@ -171,61 +172,55 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <div>
-            <a href="./index.html" class="logo link"><span lang="en" class="blue">Web </span
-          ><span lang="en" class="white">Studio</span></a
-        >
-        <address class="contacts-info">
-          <ul class="list">
-            <li>
-              <p>г. Киев, пр-т Леси Украинки, 26</p>
-            </li>
-            <li>
-              <a href="mailto:info@example.com" class="contacts-link link"
-                >info@example.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+380991111111" class="contacts-link link"
-                >+38 099 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
-      </div>
-      <div>
-        <p class="footer-tagline">присоединяйтесь</p>
-        <ul class="list">
-          <li>
-            <a href=" " aria-label="инстаграм" class="img-link">
-              <img
-                src="./images/svg/social_networks/instagram.svg"
-                alt="инстаграм"
-              />
-            </a>
-            </li>
-            <li>
-                <a href=" " aria-label="твиттер" class="img-link">
-                    <img src="./images/svg/social_networks/twitter.svg" alt="твиттер" />
-                </a>
-            </li>
-            <li>
-                <a href=" " aria-label="фейсбук" class="img-link">
-                    <img src="./images/svg/social_networks/facebook.svg" alt="фейсбук" />
-                </a>
-            </li>
-            <li>
-                <a href=" " aria-label="линкедин" class="img-link">
-                    <img src="./images/svg/social_networks/linkedin.svg " alt="линкедин " />
-                </a>
-            </li>
-            </ul>
-        </div>
-        <div>
-            <p class="footer-tagline">подпишитесь на рассылку</p>
-            <input type="text" name="email" id="email" placeholder="E-mail" />
-            <button type="button" class="btn">Подписаться</button>
+    <footer class="footer ">
+        <div class="container display-flex">
+            <div class="contacts">
+                <a href="./index.html " class="logo link "><span lang="en " class="blue ">Web </span><span lang="en "
+                    class="white ">Studio</span></a>
+                <address class="contacts-info ">
+                <ul class="list ">
+                    <li class="list-item">
+                        <p>г. Киев, пр-т Леси Украинки, 26</p>
+                    </li>
+                    <li class="list-item">
+                        <a href="mailto:info@example.com " class="contacts-link link ">info@example.com</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="tel:+380991111111 " class="contacts-link link ">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+            </div>
+            <div class="social-links">
+                <p class="footer-tagline ">присоединяйтесь</p>
+                <ul class="list display-flex">
+                    <li>
+                        <a href=" " aria-label="инстаграм " class="img-link ">
+                            <img src="./images/svg/social_networks/instagram.svg " alt="инстаграм " />
+                        </a>
+                    </li>
+                    <li>
+                        <a href=" " aria-label="твиттер " class="img-link ">
+                            <img src="./images/svg/social_networks/twitter.svg " alt="твиттер " />
+                        </a>
+                    </li>
+                    <li>
+                        <a href=" " aria-label="фейсбук " class="img-link ">
+                            <img src="./images/svg/social_networks/facebook.svg " alt="фейсбук " />
+                        </a>
+                    </li>
+                    <li>
+                        <a href=" " aria-label="линкедин " class="img-link ">
+                            <img src="./images/svg/social_networks/linkedin.svg " alt="линкедин " />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="subscription">
+                <p class="footer-tagline ">подпишитесь на рассылку</p>
+                <input type="text " name="email " id="email " placeholder=" E-mail " class="email-input" />
+                <button type=" button " class="btn ">Подписаться</button>
+            </div>
         </div>
     </footer>
 </body>

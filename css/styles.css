@@ -658,12 +658,15 @@ background-color: violet;
 
 .portfolio .portfolio-card {
     width: calc((1200px - 30px*3)/3);
-    padding-bottom: 20px;
     margin: 15px;
 }
 
+.portfolio .text-container {
+    padding: 20px 24px;
+}
+
 .portfolio-card .card-header {
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 0px;
     color: var(--title-text-color);
     font-weight: 700;

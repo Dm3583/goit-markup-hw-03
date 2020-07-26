@@ -396,9 +396,8 @@ background-color: violet;
 }
 
 .advantages .picture {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin: 0 auto;
+    padding: 25px 100px;
+    background-color: var(--secondary-bg-color);
 }
 
 .advantages .advantages-text {

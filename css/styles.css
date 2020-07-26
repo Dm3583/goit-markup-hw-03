@@ -659,6 +659,7 @@ background-color: violet;
 .portfolio .portfolio-card {
     width: calc((1200px - 30px*3)/3);
     margin: 15px;
+    border: 1px solid #EEEEEE;
 }
 
 .portfolio .text-container {

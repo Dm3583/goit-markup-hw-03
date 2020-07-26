@@ -187,14 +187,6 @@ body {
     color: #ffffff;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus,
-.contacts-link.link:hover,
-.contacts-link.link:focus,
-.link.active {
-    color: var(--accent-color);
-}
-
 .btn {
     border-radius: 4px;
     color: var(--primary-white-color);
@@ -313,6 +305,14 @@ body {
 
 .site-header>.container .contacts-list {
     margin-left: auto;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts-link.link:hover,
+.contacts-link.link:focus,
+.link.active {
+    color: var(--accent-color);
 }
 
 

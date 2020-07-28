@@ -266,6 +266,35 @@ body {
 }
 
 
+/*--------Social links icons ------------*/
+
+.list.social-networks {
+    margin-top: 16px;
+    padding: 0 32px 24px 32px;
+}
+
+.list.social-networks :not(:first-child) {
+    margin-left: 10px;
+}
+
+.list.social-networks .img-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    /* background-color: tomato; */
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.list.social-networks .img-link:hover,
+.list.social-networks .img-link:focus {
+    background-color: var(--accent-color);
+}
+
+
+/* --------- */
+
+
 /* header */
 
 .site-nav .link {
@@ -437,12 +466,20 @@ background-color: violet;
 
 /*  Our team */
 
+.our-team {
+    background-color: var(--secondary-bg-color);
+}
+
 .our-team .display-flex {
     flex-wrap: wrap;
 }
 
 .our-team .employee-card {
     width: calc((1200px - 30px*4)/4);
+    background: #FFFFFF;
+    /* material shadow v1 */
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .our-team .employee-card:not(:nth-child(4n)) {
@@ -469,10 +506,36 @@ background-color: violet;
     margin-bottom: 0;
 }
 
-.our-team .list.social-networks {
+
+/* .our-team .list.social-networks {
     margin-top: 16px;
-    justify-content: space-evenly;
+    padding: 0 32px 24px 32px;
+} */
+
+
+/* .list.social-networks {
+    margin-top: 16px;
+    padding: 0 32px 24px 32px;
 }
+
+.social-networks :not(:first-child) {
+    margin-left: 10px;
+}
+
+.social-networks .img-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    /* background-color: tomato; 
+
+padding: 12px;
+border-radius: 50%;
+
+}
+.social-networks .img-link:hover,
+.social-networks .img-link:focus {
+    background-color: var(--accent-color);
+}*/
 
 
 /*  */
@@ -558,11 +621,11 @@ background-color: violet;
 
 .footer .logo.link {
     display: inline-block;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
-.contacts .list-item {
-    padding-bottom: 9px;
+.contacts .list-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .footer .social-links,
@@ -575,12 +638,15 @@ background-color: violet;
     width: calc((1200px - 30px*3)/4);
 }
 
+.footer .img-link {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 .footer .subscription {
     width: calc((1200px - 30px*3)/2);
 }
 
-.footer .footer-tagline,
-.footer .subscription {
+.footer .footer-tagline {
     margin-top: 0;
     margin-bottom: 20px;
 }
@@ -658,11 +724,13 @@ background-color: violet;
 .portfolio .portfolio-card {
     width: calc((1200px - 30px*3)/3);
     margin: 15px;
-    border: 1px solid #EEEEEE;
 }
 
 .portfolio .text-container {
     padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 }
 
 .portfolio-card .card-header {

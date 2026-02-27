@@ -21,7 +21,7 @@ body {
   --modal-background-color: #FCFCFC;
 
   --list-item-gap: 24px;
-  --list-item-amount: 4;
+  --list-items-amount: 4;
 }
 
 ul,
@@ -151,7 +151,7 @@ h3 {
 }
 
 .list-item {
-  max-width: calc((100% - var(--list-item-gap) * (var(--list-item-amount) - 1)) / var(--list-item-amount));
+  max-width: calc((100% - var(--list-item-gap) * (var(--list-items-amount) - 1)) / var(--list-items-amount));
 }
 
 /* #endregion */
@@ -328,8 +328,26 @@ h3 {
   text-transform: capitalize;
 }
 
+.portfolio-list {
+  --list-items-amount: 3;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  margin-top: 72px;
+}
+
+.portfolio-item-text-wrapper {
+  padding: 32px 16px;
+  border-left: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+
 .portfolio-item-title {
   color: var(--dark-color);
+}
+
+.portfolio-item-text {
+  margin-top: 8px;
 }
 
 /* #endregion */
@@ -340,8 +358,14 @@ h3 {
   background-color: var(--dark-color);
 }
 
+.footer-text-wrapper {
+  max-width: 264px;
+  padding: 100px 0;
+}
+
 .footer-text {
   color: var(--light-color);
+  margin-top: 16px;
 }
 
 /* #endregion */

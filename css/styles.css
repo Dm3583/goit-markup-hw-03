@@ -295,8 +295,8 @@ h3 {
   background-color: var(--light-color);
 }
 
-.team-member-list {
-  margin-top: 72px;
+.team-section-title {
+  margin-bottom: 72px;
 }
 
 .team-item {
@@ -352,9 +352,13 @@ h3 {
   padding: 100px 0;
 }
 
+.footer-link {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .footer-text {
   color: var(--light-color);
-  margin-top: 16px;
   max-width: 264px;
 }
 
